@@ -56,7 +56,7 @@ public class Geometry extends Fragment {
         formula = new ArrayList<>();
         formula.add(new FormIcon("Sphere", R.drawable.sphere));
         formula.add(new FormIcon("Cone", R.drawable.cone));
-        formula.add(new FormIcon("Cube", R.drawable.cube));
+        formula.add(new FormIcon("Capsule", R.drawable.capsule));
         formula.add(new FormIcon("Cylinder", R.drawable.cylinder));
         formula.add(new FormIcon("Rectangular Prism", R.drawable.rectangular_prism));
 

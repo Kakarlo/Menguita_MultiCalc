@@ -58,15 +58,9 @@ public class CalculatorController {
                         break;
                     case "Cone":
                     case "Cylinder":
+                    case "Capsule":
                         calc.s1.setText("Base Radius");
                         calc.s2.setText("Height");
-                        calc.s3.setVisibility(View.GONE);
-                        calc.slot3.setVisibility(View.GONE);
-                        break;
-                    case "Cube":
-                        calc.s1.setText("Edge Length");
-                        calc.s2.setVisibility(View.GONE);
-                        calc.slot2.setVisibility(View.GONE);
                         calc.s3.setVisibility(View.GONE);
                         calc.slot3.setVisibility(View.GONE);
                         break;
@@ -117,9 +111,9 @@ public class CalculatorController {
                         calc.output1.setText(formula.cylinderVolume(num1, num2));
                         calc.output2.setText(formula.cylinderSA(num1, num2));
                         break;
-                    case "Cube":
-                        calc.output1.setText(formula.cubeVolume(num1));
-                        calc.output2.setText(formula.cubeSA(num1));
+                    case "Capsule":
+                        calc.output1.setText(formula.capsuleVolume(num1, num2));
+                        calc.output2.setText(formula.capsuleSA(num1, num2));
                         break;
                     case "Rectangular Prism":
                         calc.output1.setText(formula.rectangularPrismVolume(num1, num2, num3));

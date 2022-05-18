@@ -34,8 +34,8 @@ public class Formula {
         return String.valueOf(Math.PI * Math.pow(baseRadius, 2.0) *  height);
     }
 
-    public String cubeVolume(double edgeLength){
-        return String.valueOf(Math.pow(edgeLength, 3.0));
+    public String capsuleVolume(double baseRadius, double height){
+        return String.valueOf(Math.PI * Math.pow(baseRadius, 2.0) *  ( 4 * baseRadius / 3 + height ));
     }
 
     public String rectangularPrismVolume(double length, double width, double height){
@@ -54,8 +54,8 @@ public class Formula {
         return String.valueOf((2 * Math.PI * baseRadius * height) + (2 * Math.PI * Math.pow(baseRadius, 2.0)));
     }
 
-    public String cubeSA(double edgeLength){
-        return String.valueOf(6 * Math.pow(edgeLength, 2.0));
+    public String capsuleSA(double baseRadius, double height){
+        return String.valueOf((2 * Math.PI * baseRadius * height) + (4 * Math.PI * Math.pow(baseRadius, 2.0)));
     }
 
     public String rectangularPrismSA(double length, double width, double height){
